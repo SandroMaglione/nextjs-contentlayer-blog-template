@@ -3,6 +3,7 @@ import { defineDocumentType, makeSource } from "contentlayer/source-files";
 export const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `**/*.mdx`, // Type of file to parse (every mdx in all subfolders)
+  contentType: "mdx",
   fields: {
     title: {
       type: "string",

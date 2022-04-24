@@ -6,6 +6,7 @@ import {
   InferGetStaticPropsType,
   NextPage,
 } from "next";
+import { useMDXComponent } from "next-contentlayer/hooks";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -44,6 +45,8 @@ export async function getStaticProps({
 const PostLayout: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   post,
 }) => {
+  // Get MDX component for post
+  const Component = useMDXComponent(post.body.code);
   return (
     <>
       <Head>
@@ -64,7 +67,7 @@ const PostLayout: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <time dateTime={post.date}>{post.date}</time>
         </div>
 
-        <div dangerouslySetInnerHTML={{ __html: post.body.html }} />
+        <Component />
       </article>
     </>
   );
