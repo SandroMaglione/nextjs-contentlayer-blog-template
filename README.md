@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [contentlayer](https://github.com/contentlayerdev/contentlayer) and [nextjs](https://nextjs.org/) Blog Template
 
-## Getting Started
+Create a completely custom blog using the power of NextJs 🚀 and the flexibility of `contentlayer` 📑.
 
-First, run the development server:
+This repository is a template for a blog. It uses `contentlayer` to convert local [mdx](https://mdxjs.com/) files to blog posts that are then imported and displayed using [nextjs](https://github.com/vercel/next.js).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Structure
+The repository is organized in modules.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The [`main`](https://github.com/SandroMaglione/nextjs-contentlayer-blog-template) branch contains the minimal configuration to get your blog up and running.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+All [branches](https://github.com/SandroMaglione/nextjs-contentlayer-blog-template/branches) are designed to add some functionality on top of the basic setup. Some example of extra features that are generally found in a blog are:
+- Sitemap
+- Custom styling
+- Private posts
+- Favicons
+- SEO
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Goal
+As developers, we want full control over the content of our blog. Everything from styling, dark mode, layout, etc.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+At the same time, we do not want to deal with too many implementation details, especially when it comes to local content, bundling, and configuration.
 
-## Learn More
+Fortunately, we have `contentlayer` to solve our needs for content, and `nextjs` that gives us full control over the implementation of our website.
 
-To learn more about Next.js, take a look at the following resources:
+**Using this template, you can forget about the underling details and just add features on top of a stable and solid setup**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Roadmap
+Over time the repository will add more and more modules (branches) that implement common usecases.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Each branch will provided a guide on how to integrate a new feature into the basic template.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to create a PR if you would like to contribute to the project 🙏🏼
